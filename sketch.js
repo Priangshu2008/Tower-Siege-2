@@ -56,24 +56,24 @@ function setup() {
   block16 = new Block(330,335,30,30);
 
   //set 2 for second stand
-  blocks17 = new Block(580,225,30,30);
-  blocks18 = new Block(610,225,30,30);
-  blocks19 = new Block(640,225,30,30);
-  blocks20 = new Block(670,225,30,30);
-  blocks21 = new Block(700,225,30,30);
+  block17 = new Block(580,225,30,30);
+  block18 = new Block(610,225,30,30);
+  block19 = new Block(640,225,30,30);
+  block20 = new Block(670,225,30,30);
+  block21 = new Block(700,225,30,30);
   //level two
-  blocks22 = new Block(610,195,30,30);
-  blocks23 = new Block(640,195,30,30);
-  blocks24 = new Block(670,195,30,30);
+  block22 = new Block(610,195,30,30);
+  block23 = new Block(640,195,30,30);
+  block24 = new Block(670,195,30,30);
   //top
-  blocks25 = new Block(640,165,30,30);
+  block25 = new Block(640,165,30,30);
 
 
 
   polygon = Bodies.circle(50,200,20);
   World.add(world,polygon);
   
-  slingShot = new slingShot(this.polygon,{x:150,y:200});
+  slingShot = new SlingShot(this.polygon,{x:150,y:200});
 
 
 
@@ -112,15 +112,14 @@ function draw() {
 
 
 
-  blocks17.display();
-  blocks18.display();
-  blocks19.display();
-  blocks20.display();
-  blocks21.display();
-
-  blocks22.display();
-  blocks23.display();
-  blocks24.display();
+  block17.display();
+  block18.display();
+  block19.display();
+  block20.display();
+  block21.display();
+  block22.display();
+  block23.display();
+  block24.display();
 
   block25.display();
 
@@ -130,7 +129,7 @@ function draw() {
 
   
   imageMode(CENTER);
-  image(polygon_image,polygon.position.x,polygon.position.y,40,40);
+  image(polygon_img,polygon.position.x,polygon.position.y,40,40);
 
 
 
